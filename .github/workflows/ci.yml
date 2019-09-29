@@ -21,5 +21,9 @@ jobs:
       run: |
         npm install
         npm run build
+    - name: git commit
+      run: |
+        git add .
+        git commit -m 'commit after build'        
       env:
         CI: true
